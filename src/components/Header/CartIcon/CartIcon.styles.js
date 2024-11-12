@@ -1,0 +1,45 @@
+import styled, { keyframes } from "styled-components";
+
+const spin = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+`;
+
+const reverseSpin = keyframes`
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+`;
+
+export const StyledCartIcon = styled.div`
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+`;
+
+export const StyledItemCount = styled.span`
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  background-color: #0c969c;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  animation: ${reverseSpin} 0.5s forwards;
+
+  &:hover {
+    animation: ${spin} 0.5s forwards;
+  }
+`;
