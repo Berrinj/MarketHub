@@ -5,7 +5,7 @@ import * as C from "./components";
 function App() {
   return (
     <>
-      <C.Nav />
+      <C.Header />
       <C.Card />
     </>
   );

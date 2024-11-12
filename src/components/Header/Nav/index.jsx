@@ -1,9 +1,9 @@
-function Nav() {
+import Nav from "./Nav";
+
+function HeaderNav() {
   return (
-    <nav>
-      <h1>MarketHub</h1>
-    </nav>
+      <Nav />
   );
 }
 
-export default Nav;
+export default HeaderNav;
