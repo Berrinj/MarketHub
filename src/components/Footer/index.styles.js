@@ -5,9 +5,7 @@ export const StyledFooter = styled.footer`
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
   bottom: 0;
-  width: 100%;
   font-size: 0.8rem;
 `;
 

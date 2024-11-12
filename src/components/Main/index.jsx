@@ -2,7 +2,7 @@ import { RenderHome } from "./Home";
 
 function Home() {
   return (
-    <div>
+    <div className="home--main">
       <RenderHome />
     </div>
   );
