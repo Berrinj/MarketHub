@@ -1,4 +1,5 @@
 import { Card } from "./ProductCard.styles.js";
+import { Link } from "react-router-dom";
 
 function ProductCard() {
   return (
@@ -8,7 +9,7 @@ function ProductCard() {
       <p>produc title</p>
       <p>product price</p>
         <button>Add to cart</button>
-        <button>View details</button>
+        <Link to="/product/"><button>View details</button></Link>   
     </Card>
   );
 }
