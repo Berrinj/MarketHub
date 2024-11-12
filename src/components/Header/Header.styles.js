@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
+  display: flex;
   width: 100vw;
   background-color: #032f30;
   color: #fff;
   text-align: center;
   justify-content: space-between;
   height: 100px;
-  display: flex;
   align-items: center;
   color: #fff;
   h1 {
