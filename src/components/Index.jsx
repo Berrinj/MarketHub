@@ -1,8 +1,10 @@
-/* import all components files to export to main app */
+import Home from "./Main/Home";
+import About from "./Main/About";
+import Contact from "./Main/Contact";
+import Cart from "./Main/Cart";
+import Checkout from "./Main/Checkout";
+import CheckoutSuccess from "./Main/CheckoutSuccess";
+import Layout from "./Layout";
+import Product from "./Main/Product";
 
-// import Nav from "./Header/Nav";
-// import HeaderNav from "./Header/Nav";
-import Header from "./Header/Header";
-import Card from "./Main/ProductCard";
-
-export { Card, Header };
+export {  Home, Contact, About, Layout, Product, Cart, Checkout, CheckoutSuccess };
