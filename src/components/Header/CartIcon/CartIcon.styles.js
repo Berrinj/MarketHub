@@ -20,15 +20,15 @@ const reverseSpin = keyframes`
 
 export const StyledCartIcon = styled.div`
   position: relative;
-  height: 100%;
+  height: 70px;
   display: flex;
   align-items: center;
 `;
 
 export const StyledItemCount = styled.span`
   position: absolute;
-  top: 20px;
-  right: 5px;
+  top: 5px;
+  right: 0px;
   background-color: #0c969c;
   color: white;
   border-radius: 50%;

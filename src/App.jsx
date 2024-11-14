@@ -14,7 +14,7 @@ function App() {
         <Route index element={<C.Home />} />
         <Route path="about" element={<C.About />} />
         <Route path="contact" element={<C.Contact />} />
-        <Route path="product" element={<C.Product />} />
+        <Route path="product/:id" element={<C.DisplayProduct />} />
         <Route path="cart" element={<C.Cart />} />
         <Route path="checkout" element={<C.Checkout />} />
         <Route path="checkout-success" element={<C.CheckoutSuccess />} />

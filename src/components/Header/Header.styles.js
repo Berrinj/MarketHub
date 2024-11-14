@@ -2,17 +2,23 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   display: flex;
-  width: 100vw;
+  justify-content: center;
+  width: 100%;
   background-color: #032f30;
   color: #fff;
-  text-align: center;
-  justify-content: space-between;
   height: 100px;
   align-items: center;
   color: #fff;
+`;
+
+export const StyledHeaderItems = styled.div`
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  padding: 0 10px;
+  width: 100%;
   h1 {
     font-size: 2rem;
     margin: 0;
-    padding: 20px;
   }
 `;

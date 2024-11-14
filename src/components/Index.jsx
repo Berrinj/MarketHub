@@ -5,6 +5,7 @@ import Cart from "./Main/Cart";
 import Checkout from "./Main/Checkout";
 import CheckoutSuccess from "./Main/CheckoutSuccess";
 import Layout from "./Layout";
-import Product from "./Main/Product";
+import DisplayProductList from "./Main/Home/ProductList";
+import DisplayProduct from "./Main/Product";
 
-export {  Home, Contact, About, Layout, Product, Cart, Checkout, CheckoutSuccess };
+export {  Home, DisplayProductList, Contact, About, Layout, DisplayProduct, Cart, Checkout, CheckoutSuccess };

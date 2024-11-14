@@ -2,7 +2,7 @@ import { Card } from "./ProductCard.styles.js";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
-function ProductCard({img, alt, title, description, price}) {
+function ProductCard({img, alt, title, description, price, id}) {
   return (
     <Card className="product-card">
       <img src={img} alt={alt} className="product-card--img" />
@@ -10,12 +10,13 @@ function ProductCard({img, alt, title, description, price}) {
       <p>{description}</p>
       <p>{price}</p>
         <button>Add to cart</button>
-        <Link to="/product/"><button>View details</button></Link>   
+        <Link to={`/product/${id}`}><button>View details</button></Link>   
     </Card>
   );
 }
 //img and img alt are not required, but title, description, and price are required
 ProductCard.propTypes = {
+  id: PropTypes.string.isRequired,
   img: PropTypes.string,
   alt: PropTypes.string,
   title: PropTypes.string.isRequired,
