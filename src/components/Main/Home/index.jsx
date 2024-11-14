@@ -1,11 +1,9 @@
-import Card from "./ProductCard";
+// import Card from "./ProductCard";
+import ProductList from "./ProductList";
 
 function RenderHome() {
     return (
-    <>
-        <div>Home</div>
-        <Card />
-    </>
+        <ProductList />
     );
    
 

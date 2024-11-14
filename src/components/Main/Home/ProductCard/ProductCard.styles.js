@@ -6,5 +6,6 @@ export const Card = styled.div`
   padding: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 16px;
-  max-width: 250px;
+  width: 300px;
+  height: 400px;
 `;

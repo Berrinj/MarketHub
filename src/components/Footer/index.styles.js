@@ -4,11 +4,16 @@ export const StyledFooter = styled.footer`
   background-color: #032f30;
   color: white;
   text-align: center;
-  padding: 10px;
-  position: fixed;
+  padding: 10px 0;
   bottom: 0;
-  width: 100%;
   font-size: 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const StyledFooterContent = styled.div`
+  max-width: 1500px;
 `;
 
 export const StyledFooterText = styled.p`
