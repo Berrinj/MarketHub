@@ -1,9 +1,11 @@
+import { StyledSearchBar } from "./SearchBar.styles";
+
 function SearchBar() {
   return (
-    <div className="search-bar">
+    <StyledSearchBar>
       <input type="search" name="search-input" id="search-input" placeholder="Search products" />
       <button>Search</button>
-    </div>
+    </StyledSearchBar>
   );
 }
 
