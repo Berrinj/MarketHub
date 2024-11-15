@@ -3,7 +3,9 @@ import ProductList from "./ProductList";
 
 function RenderHome() {
     return (
+        <>
         <ProductList />
+        </>
     );
    
 
