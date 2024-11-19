@@ -47,7 +47,7 @@ function Cart() {
       </ul>
       )}
       {cart.length > 0 && <p>Total: {totalCost}</p>}
-      <Link to="/checkout-success">{cart.length > 0 && <button onClick={clearCart}>Checkout</button>}</Link>
+      <Link to="/checkout">{cart.length > 0 && <button>Go to Checkout</button>}</Link>
       <Link to={"/"}><button>Continue shopping</button></Link>
       {cart.length > 0 && <button onClick={clearCart}>Clear cart</button>}
       
