@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { FetchProductById } from "../../../api/fetch";
 import { useParams } from 'react-router-dom';
+import AddToCartBtn from '../Cart/AddToCartBtn';
+import { Link } from 'react-router-dom';
 
 
 function Product() {
@@ -44,6 +46,7 @@ function Product() {
       <img src={data.image.url} alt={data.image.alt} />
       <p>{data.description}</p>
       <p>{data.price}</p>
+      <Link to="/cart"><AddToCartBtn item={data} /></Link>
     </div>
   );
 }
