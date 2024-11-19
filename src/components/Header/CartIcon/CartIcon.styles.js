@@ -37,6 +37,7 @@ export const StyledItemCount = styled.span`
   width: 15px;
   cursor: pointer;
   font-size: 0.8rem;
+  text-align: center;
   animation: ${reverseSpin} 0.5s forwards;
 
   &:hover {

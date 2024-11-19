@@ -99,6 +99,38 @@ body {
   max-width: 1300px;
 }
 
+.cart-items {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.cart-items ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.cart-items li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.cart-items img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
 /* .home--main {
   display: flex;
   flex-wrap: wrap;

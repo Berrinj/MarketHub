@@ -9,7 +9,6 @@ function ProductCard({img, alt, title, description, price, id}) {
       <h2>{title}</h2>
       <p>{description}</p>
       <p>{price}</p>
-        <button>Add to cart</button>
         <Link to={`/product/${id}`}><button>View details</button></Link>   
     </Card>
   );

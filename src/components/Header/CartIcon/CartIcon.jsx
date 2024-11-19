@@ -1,28 +1,25 @@
 import styled from "styled-components";
 import { StyledCartIcon, StyledItemCount } from "./CartIcon.styles";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { FaCartShopping } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import useCartStore from "../../Main/Cart/useCartStore";
 
-library.add(faCartShopping);
-
-const Icon = styled(FontAwesomeIcon)`
+const Icon = styled(FaCartShopping)`
   color: white;
   font-size: 1.5rem;
   margin-right: 1rem;
 `;
 
-
 function CartIcon() {
-    let count = 10;
+  const cartItems = useCartStore((state) => state.count);
+  console.log(cartItems);
   return (
     <StyledCartIcon className="cart-icon-container">
         <Link to="/cart">
         <span className="cart-icon">
               <Icon icon="fa-solid fa-cart-shopping" />
               </span>
-      <StyledItemCount className="item-count">{count}</StyledItemCount>
+      <StyledItemCount className="item-count">{cartItems}</StyledItemCount>
       </Link>
     </StyledCartIcon>
   );
