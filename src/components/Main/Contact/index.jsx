@@ -1,5 +1,7 @@
+import ContactForm from "./ContactForm";
+
 function Contact() {
-    return <div>Contact</div>
+    return <ContactForm />
   }
 
-    export default Contact;
+  export default Contact;

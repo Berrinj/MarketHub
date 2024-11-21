@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
+  position: absolute;
   background-color: #032f30;
   color: white;
   text-align: center;
