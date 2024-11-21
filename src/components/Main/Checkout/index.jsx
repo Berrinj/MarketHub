@@ -1,9 +1,9 @@
-function Checkout() {
-  return (
-    <div>
-      <h1>Checkout</h1>
-    </div>
-  );
-}
+import Checkout from "./Checkout";
 
-export default Checkout;
+function CheckoutPage() {
+  return (
+    <Checkout />
+  );
+} 
+
+export default CheckoutPage;
