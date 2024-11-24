@@ -3,6 +3,7 @@ import { FetchProductById } from "../../../api/fetch";
 import { useParams } from 'react-router-dom';
 import AddToCartBtn from '../Cart/AddToCartBtn';
 import { Link } from 'react-router-dom';
+import RatingStars from '../../RatingStars/RatingStars';
 
 
 function Product() {
@@ -44,6 +45,7 @@ function Product() {
     <div>
       <h1>{data.title}</h1>
       <img src={data.image.url} alt={data.image.alt} />
+      <RatingStars rating={data.rating} />
       <p>{data.description}</p>
       <p>{data.price}</p>
       <Link to="/cart"><AddToCartBtn item={data} /></Link>

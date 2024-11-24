@@ -6,6 +6,7 @@ export const StyledContactForm = styled.form`
   justify-content: center;
   margin: 20px auto;
   max-width: 350px;
+  width: 100%;
   label {
     margin: 5px 0;
     text-align: left;

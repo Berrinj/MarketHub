@@ -9,6 +9,9 @@ export const StyledHeader = styled.header`
   height: 100px;
   align-items: center;
   color: #fff;
+  border-bottom: 1px solid #274d60;
+  position: fixed;
+  top: 0;
 `;
 
 export const StyledHeaderItems = styled.div`
@@ -20,5 +23,9 @@ export const StyledHeaderItems = styled.div`
   h1 {
     font-size: 2rem;
     margin: 0;
+  }
+  .logo {
+    width: auto;
+    height: 30px;
   }
 `;
