@@ -19,6 +19,7 @@ function SearchBar({ products, onSearch }) {
 
     const handleSearchInput = (e) => {
         setSearchInput(e.target.value);
+        onSearch(e.target.value);
     }
 
     const handleSearch = () => {
