@@ -32,9 +32,9 @@ function Cart() {
             </div>
             <span><p>{item.price}</p></span>
             <div>
-            <button onClick={() => increaseQuantity(item.id)}>+</button>
-            <span>{item.quantity}</span>
             <button onClick={() => decreaseQuantity(item.id)}>-</button>
+            <span>{item.quantity}</span>
+            <button onClick={() => increaseQuantity(item.id)}>+</button>
             </div>
             <span>Subtotal: {(item.price * item.quantity).toFixed(2)}</span>
             <div>

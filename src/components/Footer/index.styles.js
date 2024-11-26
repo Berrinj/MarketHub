@@ -11,6 +11,7 @@ export const StyledFooter = styled.footer`
   width: 100%;
   display: flex;
   justify-content: center;
+  border-top: 1px solid #274d60;
 `;
 
 export const StyledFooterContent = styled.div`

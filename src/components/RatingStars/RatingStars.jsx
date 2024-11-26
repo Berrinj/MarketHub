@@ -10,13 +10,21 @@ const StyledStars = styled.div`
         font-size: 1.5rem;
         }
     `;
-const NoRating = styled.div`
-  font-style: italic;
-  margin-left: 5px;
-  `;    
+// const NoRating = styled.div`
+//   font-style: italic;
+//   margin-left: 5px;
+//   `;
+
+  const RatingNumber = styled.div`
+    margin-left: 5px;
+    `;
+  const Reviews = styled.div`
+    margin-left: 5px;
+    font-style: italic;
+    `;  
     
 
-function RatingStars({ rating }) {
+function RatingStars({ rating, reviews }) {
   const stars = [];
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating % 1 !== 0;
@@ -38,7 +46,8 @@ function RatingStars({ rating }) {
 
   return <StyledStars>
     {stars}
-    {rating === 0 && <NoRating>No rating</NoRating>}
+    {rating && <RatingNumber>{rating}</RatingNumber>}
+    {reviews > 0 && <Reviews><span>({reviews})</span></Reviews>} 
     </StyledStars>;
 }
 

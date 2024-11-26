@@ -12,6 +12,7 @@ export const StyledHeader = styled.header`
   border-bottom: 1px solid #274d60;
   position: fixed;
   top: 0;
+  z-index: 100;
 `;
 
 export const StyledHeaderItems = styled.div`

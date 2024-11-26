@@ -5,6 +5,7 @@ export const StyledSearchBar = styled.div`
 
   & .search-bar {
     position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;

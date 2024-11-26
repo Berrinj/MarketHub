@@ -40,19 +40,6 @@ function ProductList() {
         setSearchResults(filterResults);
     }
 
-    // //rating is shown as stars on the product card
-    //  function calculateRating(rating) {
-    //     const stars = [];
-
-    //     if (rating === 0) {
-    //         return 'No rating';
-    //     }
-    //     for (let i = 0; i < rating; i++) {
-    //         stars.push('⭐');
-    //     }
-    //     return stars.join('');
-    // }
-
     return (
         <MainHome>
             <SearchBar products={products} onSearch={handleSearch} />
@@ -66,8 +53,10 @@ function ProductList() {
                             alt={product.image.alt} 
                             title={product.title}
                             rating={product.rating}
+                            reviews={product.reviews.length}
                             description={product.description} 
                             price={product.price}
+                            discountedPrice={product.discountedPrice}
                         />
                     </li>
                 ))}
