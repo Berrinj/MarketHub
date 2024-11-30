@@ -18,7 +18,7 @@ function Cart() {
 
   return (
     <StyledCart>
-      <h1>Cart</h1>
+      <h1 className="cart-header">Cart</h1>
       <p>Items in your cart: {count}</p>
       {cart.length === 0 ? (<p className="empty-cart">Your cart is empty</p>) : (
 <ul>
@@ -29,6 +29,7 @@ function Cart() {
             <img src={item.image.url} alt={item.image.alt} />
             </Link>
             <div className="cart-item-details">
+            <div className="cart-item-title-price-quantity">    
             <p className="cart-item-title">{item.title}</p>
             <span><p>{item.price}</p></span>
             <div className="cart-item-quantity">
@@ -36,9 +37,12 @@ function Cart() {
             <span>{item.quantity}</span>
             <button className="increase-btn" onClick={() => increaseQuantity(item.id)}>+</button>
             </div>
+            </div>
+            <div className="cart-item-sum-del">
             <span>Subtotal: {(item.price * item.quantity).toFixed(2)}</span>
             <div>
             <RemoveFromCartBtn item={item} />
+            </div>
             </div>
             </div>
           </li>
@@ -46,10 +50,14 @@ function Cart() {
         ))}
       </ul>
       )}
-      {cart.length > 0 && <p>Total: {totalCost}</p>}
-      <Link to="/checkout">{cart.length > 0 && <button>Go to Checkout</button>}</Link>
-      <Link to={"/"}><button>Continue shopping</button></Link>
-      {cart.length > 0 && <button onClick={clearCart}>Clear cart</button>}
+      {cart.length > 0 && <p className="cart-total">Total: {totalCost}</p>}
+        <div className="cart-buttons">
+          <div className="cart-buttons-checkout">
+            <Link to="/checkout">{cart.length > 0 && <button>Go to Checkout</button>}</Link>
+          </div>  
+          <Link to={"/"}><button>Continue shopping</button></Link>
+          {cart.length > 0 && <button className="clear-cart-btn" onClick={clearCart}>Clear cart</button>}
+        </div>
       
     </StyledCart>
   )
