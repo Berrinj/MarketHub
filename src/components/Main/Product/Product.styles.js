@@ -27,32 +27,30 @@ const MainProduct = styled.div`
     max-width: 600px;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   h1 {
     margin: 0;
   }
+  .price-percent {
+    font-size: 0.8rem;
+    background-color: #0a7075;
+    color: white;
+    padding: 5px;
+  }
   .price {
     font-size: 1.5rem;
-    background-color: #031716;
-    width: fit-content;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    margin: 10px 0;
-  }
-  .sale-text {
-    font-size: 1.5rem;
     font-weight: bold;
+    width: fit-content;
+    margin: 10px 0;
   }
   .price--discount {
     font-size: 1.5rem;
-    background-color: #031716;
+    font-weight: bold;
     width: fit-content;
-    padding: 10px;
-    color: white;
+    color: #ff0000;
     border-radius: 5px;
     margin: 10px 0;
-    border: 5px solid #0c969c;
   }
   .price--original {
     text-decoration: line-through;

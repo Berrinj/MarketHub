@@ -52,20 +52,18 @@ export const Card = styled.div`
     flex-direction: column;
     justify-content: space-between;
     .price {
-      background-color: #031716;
-      color: white;
       padding: 5px;
-      border-radius: 5px;
-      width: fit-content;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 0;
+      margin-bottom: 10px;
     }
   }
   .sale-price-container {
     margin-bottom: 10px;
-    .sale-text {
-      font-style: italic;
-    }
     .sale-price {
       display: flex;
+      align-items: center;
     }
     .price--discount,
     .price--original {
@@ -73,11 +71,10 @@ export const Card = styled.div`
     }
 
     .price--discount {
-      background-color: #031716;
-      color: white;
+      color: red;
+      font-weight: bold;
+      font-size: 1.5rem;
       padding: 5px;
-      border-radius: 5px;
-      border: 3px solid #0c969c;
     }
     .price--original {
       text-decoration: line-through;
