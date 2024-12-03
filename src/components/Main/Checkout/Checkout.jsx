@@ -34,7 +34,7 @@ function Checkout() {
     )}
     <div className="checkout-buttons">
       <Link to="/checkout-success">{cart.length > 0 && <button className="complete-checkout-btn" onClick={clearCart}>Place Order</button>}</Link>
-      <Link to="/cart"><button>Edit Cart</button></Link>
+      <Link to="/cart"><button className="edit-cart-btn">Edit Cart</button></Link>
     </div>
     </StyledCheckout>
   );

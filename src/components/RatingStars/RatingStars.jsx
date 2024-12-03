@@ -10,10 +10,6 @@ const StyledStars = styled.div`
         font-size: 1.5rem;
         }
     `;
-// const NoRating = styled.div`
-//   font-style: italic;
-//   margin-left: 5px;
-//   `;
 
   const RatingNumber = styled.div`
     margin-left: 5px;

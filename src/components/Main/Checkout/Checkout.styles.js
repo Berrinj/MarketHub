@@ -4,9 +4,12 @@ export const StyledCheckout = styled.div`
   //   display: flex;
   //   flex-direction: column;
   //   align-items: center;
-  margin: 100px auto;
   max-width: 1300px;
   color: white;
+  text-align: center;
+  ul {
+    justify-content: center;
+  }
   button {
     border-radius: 5px;
     border: 1px solid #d3d3d3;
@@ -17,13 +20,22 @@ export const StyledCheckout = styled.div`
     flex-direction: column;
     gap: 30px;
     .complete-checkout-btn {
-      background-color: lightgreen;
+      background-color: #0c969c;
+      color: white;
       padding: 15px;
       font-size: 1.5rem;
       width: 200px;
       &:hover {
-        background-color: green;
-        color: white;
+        background-color: #274d60;
+      }
+    }
+    .edit-cart-btn {
+      background-color: #032f30;
+      color: white;
+      padding: 8px;
+      font-size: 0.8rem;
+      &:hover {
+        background-color: #274d60;
       }
     }
   }
