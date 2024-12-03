@@ -2,13 +2,13 @@
 import "./styles.scss";
 import * as C from "./components";
 import { Routes, Route } from "react-router-dom";
+
 function RouteNotFound() {
   return <div>Page not found</div>
 }
 
 function App() {
   return (
-    <>
       <Routes>
         <Route path="/" element={<C.Layout />}>
         <Route index element={<C.Home />} />
@@ -21,7 +21,6 @@ function App() {
         <Route path="*" element={<RouteNotFound />} />
         </Route>
     </Routes>
-    </>
   );
 }
 
