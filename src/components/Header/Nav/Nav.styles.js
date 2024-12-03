@@ -70,6 +70,7 @@ export const CloseIcon = styled(IoMdClose)`
     font-size: 1.5rem;
     margin-right: 1rem;
     align-self: flex-end;
+    cursor: pointer;
   }
 `;
 
@@ -80,5 +81,6 @@ export const Icon = styled(IoIosMenu)`
     color: white;
     font-size: 1.5rem;
     margin-right: 1rem;
+    cursor: pointer;
   }
 `;

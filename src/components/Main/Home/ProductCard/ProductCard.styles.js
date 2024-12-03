@@ -10,6 +10,15 @@ export const Card = styled.div`
   border: 2px solid #274d60;
   position: relative;
   z-index: 0;
+  @media (max-width: 685px) {
+    width: 200px;
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 485px) {
+    width: 100%;
+  }
   a {
     text-decoration: none;
     color: #031716;
@@ -51,6 +60,9 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (max-width: 685px) {
+      height: 180px;
+    }
     .price {
       padding: 5px;
       font-weight: bold;
