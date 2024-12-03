@@ -29,5 +29,8 @@ export const StyledHeaderItems = styled.div`
   .logo {
     width: auto;
     height: 30px;
+    @media (max-width: 400px) {
+      height: 20px;
+    }
   }
 `;
