@@ -1,12 +1,12 @@
 import useCartStore from "../Cart/useCartStore";
 import { Link } from "react-router-dom";
-import { StyledCheckoutUl } from "./Checkout.styles";
+import { StyledCheckout, StyledCheckoutUl } from "./Checkout.styles";
 
 function Checkout() {
   const cart = useCartStore((state) => state.cart);
   const clearCart = useCartStore((state) => state.clearCart);
   return (
-    <div>
+    <StyledCheckout>
       <h1>Checkout</h1>
       <p>Items ready for checkout: {cart.length}</p>
       {cart.length === 0 ? (
@@ -20,14 +20,11 @@ function Checkout() {
           {cart.map((item) => (
             <li key={item.id}>
               <img src={item.image.url} alt={item.image.alt} />
-              <div>
-                <p>{item.title}</p>
-              </div>
               <span>
                 <p>{item.price}</p>
               </span>
               <span>
-                <p>Quantity: {item.quantity}</p>
+                <p>x {item.quantity}</p>
               </span>
             </li>
           ))}
@@ -35,9 +32,11 @@ function Checkout() {
         <p>Total: {cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)}</p>
       </>
     )}
-      <Link to="/checkout-success">{cart.length > 0 && <button onClick={clearCart}>Checkout</button>}</Link>
-      <Link to="/cart"><button>Edit Cart</button></Link>
+    <div className="checkout-buttons">
+      <Link to="/checkout-success">{cart.length > 0 && <button className="complete-checkout-btn" onClick={clearCart}>Place Order</button>}</Link>
+      <Link to="/cart"><button className="edit-cart-btn">Edit Cart</button></Link>
     </div>
+    </StyledCheckout>
   );
 }
 

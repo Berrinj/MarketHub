@@ -5,6 +5,7 @@ export const StyledSearchBar = styled.div`
 
   & .search-bar {
     position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +21,9 @@ export const StyledSearchBar = styled.div`
       &:focus {
         outline: none;
       }
+        @media (max-width: 400px) {
+          width: 150px;
+        }
     }
 
     & button {
@@ -30,6 +34,9 @@ export const StyledSearchBar = styled.div`
       padding: 10px 20px;
       cursor: pointer;
       height: 40px;
+      @media (max-width: 600px) {
+        padding: 10px;
+      }
       &:hover {
         background-color: #0a7d83;
       }

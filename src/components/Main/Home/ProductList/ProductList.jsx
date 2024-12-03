@@ -3,6 +3,7 @@ import { FetchProducts } from '../../../../api/fetch';
 import ProductCard from '../ProductCard/ProductCard';
 import { MainHome } from './ProductList.styles';
 import SearchBar from '../SearchBar';
+// import RatingStars from '../../../RatingStars/RatingStars';
 
 
 function ProductList() {
@@ -43,7 +44,6 @@ function ProductList() {
         <MainHome>
             <SearchBar products={products} onSearch={handleSearch} />
         <div className="products">
-            <h1>Products</h1>
             <ul className="product-cards">
                 {searchResults.map((product) => (
                     <li key={product.id}>
@@ -52,8 +52,11 @@ function ProductList() {
                             img={product.image.url}
                             alt={product.image.alt} 
                             title={product.title}
+                            rating={product.rating}
+                            reviews={product.reviews.length}
                             description={product.description} 
                             price={product.price}
+                            discountedPrice={product.discountedPrice}
                         />
                     </li>
                 ))}

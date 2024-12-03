@@ -9,7 +9,7 @@ function RemoveFromCartBtn({ item }) {
         removeItem(item.id);
       };
 
-    return <button onClick={handleRemoveFromcartBtn}><MdDelete>Delete</MdDelete></button>;
+    return <button className="cart-item-delete" onClick={handleRemoveFromcartBtn}><MdDelete>Delete</MdDelete></button>;
     }
 
     export default RemoveFromCartBtn;

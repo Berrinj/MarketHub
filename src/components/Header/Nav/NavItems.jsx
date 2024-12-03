@@ -1,20 +1,16 @@
-import { NavItem, NavUl } from "./Nav.styles";
-import { Link } from "react-router-dom"
+import { NavItem } from "./Nav.styles";
+import { NavLink } from "react-router-dom";
 
 function NavItems() {
+
   return (
     <>
-    <NavUl className="nav-items">
       <NavItem> 
-      <Link to="/">Home</Link>
+      <NavLink to="/">Home</NavLink>
       </NavItem>
       <NavItem> 
-      <Link to="/about">About</Link>
+      <NavLink to="/contact">Contact</NavLink>
       </NavItem>
-      <NavItem> 
-      <Link to="/contact">Contact</Link>
-      </NavItem>
-    </NavUl>
     </>
   );
 }
