@@ -8,8 +8,6 @@ const StyledCart = styled.div`
   justify-content: center;
   gap: 20px;
   list-style: none;
-  margin-top: 120px;
-  margin-bottom: 100px;
   background-color: #274d60;
   color: #fff;
   width: 80%;

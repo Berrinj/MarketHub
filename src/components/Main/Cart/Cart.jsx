@@ -23,7 +23,6 @@ function Cart() {
       {cart.length === 0 ? (<p className="empty-cart">Your cart is empty</p>) : (
 <ul>
         {cart.map((item) => (
-          <>
           <li key={item.id}>
           <Link to={`/product/${item.id}`}>
             <img src={item.image.url} alt={item.image.alt} />
@@ -46,7 +45,6 @@ function Cart() {
             </div>
             </div>
           </li>
-          </>
         ))}
       </ul>
       )}

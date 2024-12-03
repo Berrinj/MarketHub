@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const MainProduct = styled.div`
-  margin-top: 150px;
-  margin-bottom: 100px;
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
