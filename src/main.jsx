@@ -4,11 +4,11 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { FetchProducts } from "./api/fetch.jsx";
-import { ScrollToTop } from "./components/";
+// import { ScrollToTop } from "./components";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <ScrollToTop />
+    {/* <ScrollToTop /> */}
     <App />
   </BrowserRouter>,
 );
