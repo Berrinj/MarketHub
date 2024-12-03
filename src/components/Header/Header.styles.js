@@ -4,6 +4,7 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
   background-color: #032f30;
   color: #fff;
   height: 80px;
