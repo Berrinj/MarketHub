@@ -7,6 +7,10 @@ export const StyledContactForm = styled.form`
   margin: 20px auto;
   max-width: 350px;
   width: 100%;
+  h1 {
+    text-align: center;
+    color: #0c969c;
+  }
   label {
     margin: 5px 0;
     text-align: left;
@@ -29,6 +33,18 @@ export const StyledContactForm = styled.form`
     border: 1px solid #d3d3d3;
     margin-bottom: 10px;
   }
+  .form-msg {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  .form-success {
+    background-color: lightgreen;
+  }
+  .form-error {
+    background-color: red;
+  }
   .btn-container {
     display: flex;
     flex-direction: column;
@@ -49,7 +65,7 @@ export const StyledContactForm = styled.form`
   }
   .submit-btn {
     margin-top: 10px;
-    background-color: lightgreen;
+    background-color: #0c969c;
     width: 100px;
     align-self: center;
     &:hover {
@@ -59,11 +75,13 @@ export const StyledContactForm = styled.form`
   }
   .reset-btn {
     margin-top: 30px;
-    background-color: #f8f8f8;
+    background-color: #032f30;
+    color: white;
     width: 100px;
     height: 25px;
     font-size: 0.8rem;
     font-style: italic;
+    cursor: pointer;
   }
   .form-error {
     background-color: red;

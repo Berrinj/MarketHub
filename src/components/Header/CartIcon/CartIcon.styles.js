@@ -32,7 +32,7 @@ export const StyledItemCount = styled.span`
   position: absolute;
   top: 5px;
   right: 0px;
-  background-color: #0c969c;
+  background-color: #0a7075;
   color: white;
   border-radius: 50%;
   padding: 3px;

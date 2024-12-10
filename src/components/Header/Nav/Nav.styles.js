@@ -46,7 +46,7 @@ export const NavItem = styled.li`
     transition: 0.3s ease-in-out;
     &:hover,
     &.active {
-      color: #0c969c;
+      color: #6ba3be;
       &::after {
         content: "";
         width: 40%;
