@@ -23,6 +23,9 @@ export const StyledCartIcon = styled.div`
   height: 70px;
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+   width: 100%;
+    justify-content: flex-end;
 `;
 
 export const StyledItemCount = styled.span`

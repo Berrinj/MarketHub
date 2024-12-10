@@ -10,7 +10,7 @@ const StyledCart = styled.div`
   list-style: none;
   background-color: #274d60;
   color: #fff;
-  width: 80%;
+  width: 90%;
   border-radius: 5px;
   .cart-header {
     margin: 0;

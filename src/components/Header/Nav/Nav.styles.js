@@ -4,12 +4,14 @@ import { IoIosMenu } from "react-icons/io";
 
 export const NavStyle = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   padding: 10px;
   @media (max-width: 600px) {
     justify-content: flex-end;
+    order: 2;
+    width: fit-content;
   }
 `;
 
