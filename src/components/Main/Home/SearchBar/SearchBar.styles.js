@@ -22,7 +22,7 @@ export const StyledSearchBar = styled.div`
         outline: none;
       }
         @media (max-width: 400px) {
-          width: 150px;
+          width: 100%;
         }
     }
 

@@ -23,13 +23,16 @@ export const StyledCartIcon = styled.div`
   height: 70px;
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+   width: 100%;
+    justify-content: flex-end;
 `;
 
 export const StyledItemCount = styled.span`
   position: absolute;
   top: 5px;
   right: 0px;
-  background-color: #0c969c;
+  background-color: #0a7075;
   color: white;
   border-radius: 50%;
   padding: 3px;

@@ -4,20 +4,24 @@ const MainProduct = styled.div`
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  gap: 10px;
 
   .product-image {
     margin-bottom: 10px;
     img {
       max-height: 500px;
-      width: 100%;
+      max-width: 430px;
       border-radius: 10px;
       margin: 0 auto;
       object-fit: contain;
+      @media (max-width: 600px) {
+        max-width: 100%;
+      }
     }
   }
   .product-info {

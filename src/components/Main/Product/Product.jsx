@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import RatingStars from '../../RatingStars/RatingStars';
 import MainProduct from './Product.styles';
 import Price from '../../Price/Price';
+import { StyledLoadingText } from '../Home/ProductList/ProductList.styles';
 
 
 function Product() {
@@ -34,7 +35,7 @@ function Product() {
 
 
   if (isLoading || !data) {
-    return <div>Loading</div>;
+    return <div><StyledLoadingText>Loading</StyledLoadingText></div>;
   }
 
   if (isError) {

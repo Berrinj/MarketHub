@@ -4,12 +4,14 @@ import { IoIosMenu } from "react-icons/io";
 
 export const NavStyle = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   padding: 10px;
   @media (max-width: 600px) {
     justify-content: flex-end;
+    order: 2;
+    width: fit-content;
   }
 `;
 
@@ -44,7 +46,7 @@ export const NavItem = styled.li`
     transition: 0.3s ease-in-out;
     &:hover,
     &.active {
-      color: #0c969c;
+      color: #6ba3be;
       &::after {
         content: "";
         width: 40%;
@@ -68,7 +70,6 @@ export const CloseIcon = styled(IoMdClose)`
     display: block;
     color: white;
     font-size: 1.5rem;
-    margin-right: 1rem;
     align-self: flex-end;
     cursor: pointer;
   }
@@ -80,7 +81,6 @@ export const Icon = styled(IoIosMenu)`
     display: block;
     color: white;
     font-size: 1.5rem;
-    margin-right: 1rem;
     cursor: pointer;
   }
 `;

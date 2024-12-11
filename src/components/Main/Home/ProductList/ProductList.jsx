@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { FetchProducts } from '../../../../api/fetch';
 import ProductCard from '../ProductCard/ProductCard';
-import { MainHome } from './ProductList.styles';
+import { MainHome, StyledLoadingText } from './ProductList.styles';
 import SearchBar from '../SearchBar';
 // import RatingStars from '../../../RatingStars/RatingStars';
 
@@ -27,7 +27,7 @@ function ProductList() {
     }, []);
 
     if (isLoading) {
-        return <div>Loading posts...</div>;
+        return <span><StyledLoadingText>Loading posts...</StyledLoadingText></span>;
       }
     if (error) {
         return <div>Error: {error}</div>;

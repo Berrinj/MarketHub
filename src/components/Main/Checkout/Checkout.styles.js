@@ -20,13 +20,13 @@ export const StyledCheckout = styled.div`
     flex-direction: column;
     gap: 30px;
     .complete-checkout-btn {
-      background-color: #0c969c;
+      background-color: #274d60;
       color: white;
       padding: 15px;
       font-size: 1.5rem;
       width: 200px;
       &:hover {
-        background-color: #274d60;
+        background-color: #0c969c;
       }
     }
     .edit-cart-btn {

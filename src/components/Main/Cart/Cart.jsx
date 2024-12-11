@@ -3,6 +3,13 @@ import useCartStore from './useCartStore';
 import RemoveFromCartBtn from './RemoveFromCartBtn';
 import { Link } from 'react-router-dom';
 import StyledCart from './Cart.styles';
+import { MdDelete } from 'react-icons/md';
+import styled from 'styled-components';
+
+const TrashCan = styled(MdDelete)`
+    font-size: 1rem;
+    color: #fff;
+    `;
 
 function Cart() {
   const count = useCartStore((state) => state.count);
@@ -18,12 +25,18 @@ function Cart() {
 
   return (
     <StyledCart>
+      <div>
       <h1 className="cart-header">Cart</h1>
       <p>Items in your cart: {count}</p>
+      </div>
       {cart.length === 0 ? (<p className="empty-cart">Your cart is empty</p>) : (
-<ul>
+      <div className="cart-items-summary">  
+      <div className="cart-items">
+<ul className="cart-items-ul">
+  
         {cart.map((item) => (
           <li key={item.id}>
+            <div className="cart-item-li-content">
           <Link to={`/product/${item.id}`}>
             <img src={item.image.url} alt={item.image.alt} />
             </Link>
@@ -32,7 +45,8 @@ function Cart() {
             <p className="cart-item-title">{item.title}</p>
             <span><p>{item.price}</p></span>
             <div className="cart-item-quantity">
-            <button className="decrease-btn" onClick={() => decreaseQuantity(item.id)}>-</button>
+              {item.quantity === 1 ? (<button className="decrease-btn" onClick={() => decreaseQuantity(item.id)}><TrashCan></TrashCan></button>) : (
+            <button className="decrease-btn" onClick={() => decreaseQuantity(item.id)}>-</button>)}
             <span>{item.quantity}</span>
             <button className="increase-btn" onClick={() => increaseQuantity(item.id)}>+</button>
             </div>
@@ -40,13 +54,28 @@ function Cart() {
             <div className="cart-item-sum-del">
             <span>Subtotal: {(item.price * item.quantity).toFixed(2)}</span>
             <div>
-            <RemoveFromCartBtn item={item} />
+            <RemoveFromCartBtn item={item} className="cart-item-delete" />
+            </div>
             </div>
             </div>
             </div>
           </li>
         ))}
       </ul>
+      </div>
+            <div className="cart-summary">
+            <h2>Summary</h2>
+            <ul className="cart-summary-ul">
+              {cart.map((item) => (
+                <li key={item.id}>
+                  <span>{item.quantity} x {item.title}</span>
+                  <span>{(item.price * item.quantity).toFixed(2)}</span>
+                </li>
+              ))}
+            </ul>
+            <span>Total: {totalCost}</span>
+          </div>
+          </div>
       )}
       {cart.length > 0 && <p className="cart-total">Total: {totalCost}</p>}
         <div className="cart-buttons">

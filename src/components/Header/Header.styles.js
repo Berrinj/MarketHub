@@ -19,7 +19,7 @@ export const StyledHeader = styled.header`
 export const StyledHeaderItems = styled.div`
   display: flex;
   align-items: center;
-  max-width: 1500px;
+  max-width: 1300px;
   padding: 0 10px;
   width: 100%;
   h1 {
