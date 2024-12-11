@@ -30,9 +30,13 @@ function Cart() {
       <p>Items in your cart: {count}</p>
       </div>
       {cart.length === 0 ? (<p className="empty-cart">Your cart is empty</p>) : (
-<ul>
+      <div className="cart-items-summary">  
+      <div className="cart-items">
+<ul className="cart-items-ul">
+  
         {cart.map((item) => (
           <li key={item.id}>
+            <div className="cart-item-li-content">
           <Link to={`/product/${item.id}`}>
             <img src={item.image.url} alt={item.image.alt} />
             </Link>
@@ -54,9 +58,24 @@ function Cart() {
             </div>
             </div>
             </div>
+            </div>
           </li>
         ))}
       </ul>
+      </div>
+            <div className="cart-summary">
+            <h2>Summary</h2>
+            <ul className="cart-summary-ul">
+              {cart.map((item) => (
+                <li key={item.id}>
+                  <span>{item.quantity} x {item.title}</span>
+                  <span>{(item.price * item.quantity).toFixed(2)}</span>
+                </li>
+              ))}
+            </ul>
+            <span>Total: {totalCost}</span>
+          </div>
+          </div>
       )}
       {cart.length > 0 && <p className="cart-total">Total: {totalCost}</p>}
         <div className="cart-buttons">
