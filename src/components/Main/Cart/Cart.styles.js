@@ -8,7 +8,7 @@ const StyledCart = styled.div`
   justify-content: center;
   gap: 20px;
   list-style: none;
-  background-color: #274d60;
+  // background-color: #274d60;
   color: #fff;
   width: 90%;
   border-radius: 5px;
@@ -33,8 +33,8 @@ const StyledCart = styled.div`
     align-items: center;
     gap: 20px;
     color: #fff;
-    width: 90%;
-    background-color: #0c969c;
+    width: 100%;
+    background-color: #274d60;
     border-radius: 5px;
     padding: 10px;
     @media (max-width: 480px) {
@@ -121,7 +121,7 @@ const StyledCart = styled.div`
           border-radius: 5px;
           cursor: pointer;
           &:hover {
-            background-color: #274d60;
+            background-color: #032f30;
           }
         }
       }
@@ -145,11 +145,11 @@ const StyledCart = styled.div`
     a {
       text-decoration: none;
       button {
-        background-color: #0c969c;
+        background-color: #274d60;
         color: #fff;
         padding: 10px;
         &:hover {
-          background-color: #274d60;
+          background-color: #0c969c;
         }
       }
     }
