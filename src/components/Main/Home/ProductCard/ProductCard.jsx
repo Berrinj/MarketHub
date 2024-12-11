@@ -22,7 +22,7 @@ function ProductCard({img, alt, title, rating, reviews, description, price, disc
       <h2>{title}</h2>
       <div className="product-card--details">
       <RatingStars rating={rating} reviews={reviews} />
-        <p>{truncateText(description, 60)}</p>
+        <p className="product-card--description">{truncateText(description, 60)}</p>
         <Price price={price} discountedPrice={discountedPrice}/>
         </div></Link>
         <Link to={`/product/${id}`}><button>View details</button></Link>  

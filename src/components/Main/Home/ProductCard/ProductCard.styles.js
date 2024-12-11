@@ -15,10 +15,14 @@ export const Card = styled.div`
     h2 {
       font-size: 1.2rem;
     }
+    p {
+      font-size: 0.9rem;
+    }
+    .product-card--details {
+      height: 180px;
+    }
   }
-  @media (max-width: 485px) {
-    width: 100%;
-  }
+
   a {
     text-decoration: none;
     color: #031716;
@@ -60,11 +64,9 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media (max-width: 685px) {
-      height: 180px;
-    }
+
     .price {
-      padding: 5px;
+      padding: 5px 0;
       font-weight: bold;
       font-size: 1.5rem;
       margin: 0;
@@ -108,5 +110,45 @@ export const Card = styled.div`
     &:hover {
       background-color: #0c969c;
     }
+  }
+  @media (max-width: 485px) {
+    max-width: 150px;
+    font-size: 0.8rem;
+    .product-card--img {
+      height: 150px;
+    }
+    h2 {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+    .product-card--details {
+      padding: 0 10px;
+      height: 150px;
+      .price {
+        font-size: 1rem;
+        margin-bottom: 5px;
+      }
+      .product-card--description {
+        margin: 0;
+      }
+      .sale-price-container {
+        .sale-price {
+          .price--discount {
+            font-size: 1rem;
+            padding: 0;
+          }
+          .price--original {
+            font-size: 0.7rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 385px) {
+    max-width: 130px;
+  }
+  @media (max-width: 344px) {
+    max-width: 100%;
   }
 `;
