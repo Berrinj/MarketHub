@@ -30,7 +30,7 @@ function ProductList() {
     }, []);
 
     if (isLoading) {
-        return <span><StyledLoadingText>Loading posts...</StyledLoadingText></span>;
+        return <span><StyledLoadingText>Loading products...</StyledLoadingText></span>;
       }
     if (error) {
         return <div>Error: {error}</div>;
