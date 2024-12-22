@@ -16,7 +16,7 @@ export const MainHome = styled.div`
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
     list-style: none;
   }
