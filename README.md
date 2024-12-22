@@ -1,8 +1,44 @@
-# React + Vite
+# MarkedHub e-commerse, Javascript Frameworks CA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Noroff JavaScript Frameworks CA, December 2024<br>
+[View the website live on Netlify](https://markethub-ca.netlify.app/)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project uses React and Vite, and was designed to learn about JavaScript Frameworks. I choose not to use a CSS Framework to get the full experience writing my styles in styled-components and CSS modules. The page is a online shop "selling" a variety of items. The task was to build the site, list all products, list single product, add product to cart and complete checkout. A contact form that logs the data in the console.
+
+## Built With
+
+- CSS
+- JavaScript
+- React
+- React Router
+- Vite
+- Noroff API
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/Berrinj/MarketHub.git
+```
+
+### Running
+
+1. Clone the repo
+2. Run repo in a code editor, I suggest using "VScode".
+3. Run npm i.
+4. Run npm run dev and follow link in the terminal
+
+## Contributing
+
+Feedback is appreciated
+
+## Contact
+
+[Send me an email](mailto:berremarte@gmail.com)
+
+[www.linkedin.com](https://www.linkedin.com/in/marte-lilleberre-1013b326a/)
