@@ -1,6 +1,7 @@
 # MarkedHub online shop, Javascript Frameworks CA
 
-![image](https://1drv.ms/i/s!ApVGGT5gq0hple4QSVDJGmM6BGmxeg?embed=1&height=660) <br>
+![image](https://onedrive.live.com/embed?resid=6948AB603E194695!358168&authkey=!Aq1diG7Fx8P8lFk&height=660) <br>
+
 
 Noroff JavaScript Frameworks CA, December 2024<br>
 [View the website live on Netlify](https://markethub-ca.netlify.app/)
