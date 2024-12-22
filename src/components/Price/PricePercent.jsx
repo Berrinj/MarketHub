@@ -1,3 +1,10 @@
+/**
+ * @param {*} price 
+ * @param {*} previousPrice
+ * @description This component is responsible for rendering the percentage off of a product
+ * @returns the PricePercent component displaying the percentage off
+ */
+
 function PricePercent({ price, previousPrice }) {
   const percentOff = ((previousPrice - price) / previousPrice) * 100;
   if (percentOff <= 0) {

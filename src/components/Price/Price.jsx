@@ -1,5 +1,13 @@
 import PricePercent from "./PricePercent";
 
+/**
+ * 
+ * @param {*} Price
+ * @param {*} discountedPrice
+ * @description This component is responsible for rendering the price of a product, original price and/or discounted price
+ * @returns the Price component
+ */
+
 function Price({price, discountedPrice}) {
     if (discountedPrice < price) {
       return (

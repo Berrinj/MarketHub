@@ -4,6 +4,10 @@ import CartIcon from './CartIcon/CartIcon';
 import { Link }from 'react-router-dom';
 import logo from '../../images/logo.png';
 
+/** 
+ * @returns the Header component with the logo, nav, and cart icon
+ */
+
 function Header() {
   return (
     <StyledHeader>

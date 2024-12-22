@@ -8,6 +8,10 @@ import MainProduct from './Product.styles';
 import Price from '../../Price/Price';
 import { StyledLoadingText } from '../Home/ProductList/ProductList.styles';
 
+/**
+ * @description the Product component fetches the product by id and displays the product image, info, tags, and reviews
+ * @returns the Product component with the product image, info, tags, and reviews
+ */
 
 function Product() {
     const [data, setData] = useState(null);
@@ -63,7 +67,6 @@ function Product() {
     ));
   }
 
-  console.log(data);
 
   return (
     <MainProduct>

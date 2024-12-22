@@ -1,19 +1,10 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-// const useCartStore = create((set) => ({
-//     count: 0,
-//     cart: [],
-//     addToCart: (item) => set((state) => (
-//         { cart: [...state.cart, item], count: state.count + 1 })),
-//     removeFromCart: (id) =>
-//       set((state) => ({
-//         cart: state.cart.filter((item) => item.id !== id),
-//         count: state.count - 1,
-//       })),
-//   }));
-  
-//     export default useCartStore;
+/**
+ * @description Custom hook that creates a store for the cart items, count, and functions to add, remove, clear, increase, decrease, and get the total cost of the cart
+ * @returns the useCartStore hook
+ */
 
 const useCartStore = create(
   persist(

@@ -1,5 +1,9 @@
 import { StyledFooter, StyledFooterContent, StyledFooterText } from "./index.styles";
 
+/**
+ * @returns the Footer component with the footer content
+ */
+
 function Footer() {
     return <StyledFooter>
         <StyledFooterContent>

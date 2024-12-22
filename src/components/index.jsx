@@ -1,5 +1,4 @@
 import Home from "./Main/Home";
-import About from "./Main/About";
 import Contact from "./Main/Contact";
 import CartPage from "./Main/Cart";
 import Checkout from "./Main/Checkout";
@@ -9,4 +8,4 @@ import DisplayProductList from "./Main/Home/ProductList";
 import DisplayProduct from "./Main/Product";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
-export {  Home, DisplayProductList, Contact, About, Layout, DisplayProduct, CartPage, Checkout, CheckoutSuccess, ScrollToTop };
+export {  Home, DisplayProductList, Contact, Layout, DisplayProduct, CartPage, Checkout, CheckoutSuccess, ScrollToTop };
