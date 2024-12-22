@@ -11,15 +11,17 @@ const TrashCan = styled(MdDelete)`
     color: #fff;
     `;
 
+/**
+ * @description Cart component that uses the useCartStore hook to get the cart items, count, clearCart, decreaseQuantity, increaseQuantity, and getTotalCost functions
+ * @returns the Cart component with the cart items, summary, and buttons
+ */    
+
 function Cart() {
   const count = useCartStore((state) => state.count);
   const cart = useCartStore((state) => state.cart);
   const clearCart = useCartStore((state) => state.clearCart);
   const {decreaseQuantity, increaseQuantity, getTotalCost} = useCartStore();
 
-  // const cartTotal = cart.reduce((acc, item) => acc + item.price, 0);
-  // const total = cartTotal.toFixed(2);
-  // console.log(total);
 
   const totalCost = getTotalCost().toFixed(2);
 

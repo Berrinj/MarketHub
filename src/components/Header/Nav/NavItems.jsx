@@ -1,6 +1,10 @@
 import { NavItem } from "./Nav.styles";
 import { NavLink } from "react-router-dom";
 
+/**
+ * @returns the NavItems component with the nav items
+ */
+
 function NavItems() {
 
   return (

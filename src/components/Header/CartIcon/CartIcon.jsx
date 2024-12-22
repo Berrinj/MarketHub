@@ -10,9 +10,14 @@ const Icon = styled(FaCartShopping)`
   margin-right: 1rem;
 `;
 
+/**
+ * 
+ * @name CartIcon
+ * @returns the CartIcon component with the icon and the number of items in the cart using the useCartStore hook
+ */
+
 function CartIcon() {
   const cartItems = useCartStore((state) => state.count);
-  console.log(cartItems);
   return (
     <StyledCartIcon className="cart-icon-container">
         <Link to="/cart">

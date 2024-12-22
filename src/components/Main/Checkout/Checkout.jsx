@@ -2,6 +2,11 @@ import useCartStore from "../Cart/useCartStore";
 import { Link } from "react-router-dom";
 import { StyledCheckout, StyledCheckoutUl } from "./Checkout.styles";
 
+/**
+ * @description the Checkout component displays the items ready for checkout
+ * @returns the Checkout component with the items in the cart, the total, and buttons to edit the cart or place the order
+ */
+
 function Checkout() {
   const cart = useCartStore((state) => state.cart);
   const clearCart = useCartStore((state) => state.clearCart);

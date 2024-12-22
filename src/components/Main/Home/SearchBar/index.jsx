@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import { StyledSearchBar } from "./SearchBar.styles";
 import { Link } from "react-router-dom";
 
+/**
+ * @param {*} products
+ * @param {*} onSearch
+ * @description This component is responsible for rendering the search input and results in a dropdown 
+ * @returns the SearchBar component with the search input and results
+ */
+
 function SearchBar({ products, onSearch }) {
     const [searchInput, setSearchInput] = useState("");
     const [searchResults, setSearchResults] = useState([]);

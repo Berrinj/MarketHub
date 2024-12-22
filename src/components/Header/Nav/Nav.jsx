@@ -2,6 +2,14 @@ import { NavStyle, NavUl, Icon, CloseIcon  } from "./Nav.styles";
 import NavItems from "./NavItems";
 import { useState, useRef, useEffect } from "react";
 
+/**
+ * @name Nav 
+ * @description the component uses the useState, useRef, and useEffect hooks to handle the mobile nav functionality
+ * @returns the Nav component with the nav items and the mobile nav functionality that open and closes the mobile nav
+ * @todo fix the concole error on the isOpen prop, no luck so far
+ * 
+ **/
+
 
 function Nav() {
    const [isOpen, setIsOpen] = useState(false);

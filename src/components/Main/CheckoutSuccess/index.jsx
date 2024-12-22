@@ -14,6 +14,11 @@ const StyledCheckoutSuccess = styled.div`
   }
     `;
 
+/**
+ * @description CheckoutSuccess component is a functional component that displays a message to the user that their order is placed
+ * @returns the CheckoutSuccess component with a message and a button to continue shopping
+ */
+
 function CheckoutSuccess() {
     return (
       <StyledCheckoutSuccess>

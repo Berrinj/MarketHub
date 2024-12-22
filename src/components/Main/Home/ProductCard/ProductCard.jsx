@@ -5,6 +5,13 @@ import Price from "../../../Price/Price";
 import PricePercent from "../../../Price/PricePercent.jsx";
 // import PropTypes from 'prop-types';
 
+/**
+ * 
+ * @param {*} text, the description of the product that needs to be truncated
+ * @param {*} maxLength 
+ * @returns the truncated text of the description if the text length is greater than the maxLength
+ */
+
 function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
     return text;
@@ -30,14 +37,5 @@ function ProductCard({img, alt, title, rating, reviews, description, price, disc
     </Card>
   );
 }
-//img and img alt are not required, but title, description, and price are required
-// ProductCard.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   img: PropTypes.string,
-//   alt: PropTypes.string,
-//   title: PropTypes.string.isRequired,
-//   description: PropTypes.string.isRequired,
-//   price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-// };
 
 export default ProductCard;

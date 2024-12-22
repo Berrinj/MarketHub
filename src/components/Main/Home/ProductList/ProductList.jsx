@@ -3,8 +3,11 @@ import { FetchProducts } from '../../../../api/fetch';
 import ProductCard from '../ProductCard/ProductCard';
 import { MainHome, StyledLoadingText } from './ProductList.styles';
 import SearchBar from '../SearchBar';
-// import RatingStars from '../../../RatingStars/RatingStars';
 
+/**
+ * @description the ProductList component uses the FetchProducts function to fetch the products and display them in the ProductCard component. It displays matching products on typing in the searchbar
+ * @returns the ProductList component
+ */
 
 function ProductList() {
     const [products, setProducts] = useState([]);

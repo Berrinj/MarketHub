@@ -19,6 +19,12 @@ const StyledStars = styled.div`
     font-style: italic;
     `;  
     
+/**
+ * @param {*} rating, the rating of the product
+ * @param {*} reviews, how many reviews the product has
+ * @description This component renders a star rating with the number of reviews in italic 
+ * @returns 
+ */
 
 function RatingStars({ rating, reviews }) {
   const stars = [];
